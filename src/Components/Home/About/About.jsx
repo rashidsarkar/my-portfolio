@@ -1,14 +1,17 @@
 import "./about.css";
-import myWorks from "../../../../public/assets/about/my-works.png";
-import btnIcon from "../../../../public/assets/about/btnIcon.svg";
-import star1 from "../../../../public/assets/about/star1.svg";
-import bg1 from "../../../../public/assets/about/bg1.png";
-import icon2 from "../../../../public/assets/about/icon2.png";
-import resumeIcon from "../../../../public/assets/about/resumeIcon2.png";
+
+import myWorks from "../../../assets/about/my-works.png";
+import btnIcon from "../../../assets/about/btnIcon.svg";
+import star1 from "../../../assets/about/star1.svg";
+import bg1 from "../../../assets/about/bg1.png";
+import icon2 from "../../../assets/about/icon2.png";
+import resumeIcon from "../../../assets/about/resumeIcon2.png";
 import { FaGithub, FaLinkedin, FaReact } from "react-icons/fa6";
 import { TbBrandJavascript } from "react-icons/tb";
 import { SiExpress } from "react-icons/si";
 import { SiMongodb } from "react-icons/si";
+import Profile from "../../Shared/Profile/Profile";
+import WorkTogeth from "../../Shared/WorkTogeth/WorkTogeth";
 function About() {
   return (
     <div>
@@ -124,7 +127,7 @@ function About() {
                   </div>
                 </div>
 
-                <div data-aos="zoom-in">
+                {/* <div data-aos="zoom-in">
                   <div className="about-profile-box info-box shadow-box h-full">
                     <img src={bg1} alt="BG" className="bg-img" />
                     <div className="inner-profile-icons shadow-box">
@@ -146,7 +149,8 @@ function About() {
                       </a>
                     </div>
                   </div>
-                </div>
+                </div> */}
+                <Profile />
               </div>
             </div>
           </div>
@@ -182,7 +186,7 @@ function About() {
                 </div>
               </div>
             </div>
-            <div className="col-md-6" data-aos="zoom-in">
+            {/* <div className="col-md-6" data-aos="zoom-in">
               <div className="about-contact-box info-box shadow-box">
                 <img src={bg1} alt="BG" className="bg-img" />
                 <img src={icon2} alt="Icon" className="star-icon" />
@@ -194,7 +198,8 @@ function About() {
                   <img src={btnIcon} alt="Button" />
                 </a>
               </div>
-            </div>
+            </div> */}
+            <WorkTogeth />
           </div>
         </div>
       </section>
