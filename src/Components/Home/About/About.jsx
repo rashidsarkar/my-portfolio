@@ -13,6 +13,7 @@ import { SiMongodb } from "react-icons/si";
 import Profile from "../../Shared/Profile/Profile";
 import WorkTogeth from "../../Shared/WorkTogeth/WorkTogeth";
 import Resume from "./Resume/Resume";
+import { Link } from "react-router-dom";
 function About() {
   return (
     <div>
@@ -122,9 +123,13 @@ function About() {
                         <h1>My Skills</h1>
                       </div>
 
-                      <a href="./service/service.html" className="about-btn">
+                      <Link
+                        to={`/skills`}
+                        href="./service/service.html"
+                        className="about-btn"
+                      >
                         <img src={btnIcon} alt="Button" />
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </div>
