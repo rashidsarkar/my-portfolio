@@ -12,6 +12,7 @@ import { SiExpress } from "react-icons/si";
 import { SiMongodb } from "react-icons/si";
 import Profile from "../../Shared/Profile/Profile";
 import WorkTogeth from "../../Shared/WorkTogeth/WorkTogeth";
+import Resume from "./Resume/Resume";
 function About() {
   return (
     <div>
@@ -88,7 +89,7 @@ function About() {
           <div className="row mt-24">
             <div className="col-md-12">
               <div className="blog-service-profile-wrap d-flex gap-24">
-                <div data-aos="zoom-in">
+                {/* <div data-aos="zoom-in">
                   <div className="about-blog-box info-box shadow-box h-full">
                     <img src={bg1} alt="BG" className="bg-img" />
                     <img src={resumeIcon} className="resumeIcon" alt="GFonts" />
@@ -103,7 +104,8 @@ function About() {
                       </a>
                     </div>
                   </div>
-                </div>
+                </div> */}
+                <Resume />
 
                 <div data-aos="zoom-in" className="flex-1">
                   <div className="about-services-box info-box shadow-box h-full">
