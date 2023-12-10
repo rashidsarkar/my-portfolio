@@ -25,9 +25,11 @@ function About() {
                   />
                 </div>
                 <div className="infos">
-                  <h4 className="text-uppercase ">A WEB Developer</h4>
-                  <h1>David Henderson.</h1>
-                  <p>I am a Web Designer based in san francisco.</p>
+                  <h4 className="text-uppercase ">
+                    A Passionate Web Developer
+                  </h4>
+                  <h1>Rashid Sarkar.</h1>
+                  <p>I am a Web Developer based in Bangladesh.</p>
                   <a href="#" className="about-btn">
                     <img src={btnIcon} alt="Button" />
                   </a>
@@ -41,17 +43,17 @@ function About() {
                   <div className="banner shadow-box">
                     <div className="marquee">
                       <div>
-                        <span>
-                          LATEST WORK AND <b>FEATURED</b>
+                        <span className="merqueText ">
+                          Hey there! I'm Rashid Sarkar, a passionate web
+                          developer based in Bangladesh.
                           <img src={star1} alt="Star" />
-                          LATEST WORK AND <b>FEATURED</b>
-                          <img src={star1} alt="Star" />
-                          LATEST WORK AND <b>FEATURED</b>
-                          <img src={star1} alt="Star" />
-                          LATEST WORK AND <b>FEATURED</b> LATEST WORK AND
-                          <img src={star1} alt="Star" />
-                          LATEST WORK AND <b>FEATURED</b> LATEST WORK AND
-                          <img src={star1} alt="Star" />
+                          With a solid year of experience in the field, I
+                          specialize in crafting delightful user experiences
+                          using React. js on the frontend and Express on the
+                          backend.
+                          <img src={star1} alt="Star" />I strive to create
+                          seamless user experiences and aim to be the top MERN
+                          developer in 🇧🇩.
                         </span>
                       </div>
                     </div>
@@ -163,10 +165,10 @@ function About() {
                   </div>
 
                   <div className="client-item">
-                    <h1>+125</h1>
+                    <h1>+750</h1>
                     <p>
-                      CLIENTS <br />
-                      WORLDWIDE
+                      GitHub <br />
+                      Contributions
                     </p>
                   </div>
 
