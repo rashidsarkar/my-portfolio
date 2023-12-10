@@ -3,7 +3,12 @@ import myWorks from "../../../../public/assets/about/my-works.png";
 import btnIcon from "../../../../public/assets/about/btnIcon.svg";
 import star1 from "../../../../public/assets/about/star1.svg";
 import bg1 from "../../../../public/assets/about/bg1.png";
+import icon2 from "../../../../public/assets/about/icon2.png";
 import resumeIcon from "../../../../public/assets/about/resumeIcon2.png";
+import { FaGithub, FaLinkedin, FaReact } from "react-icons/fa6";
+import { TbBrandJavascript } from "react-icons/tb";
+import { SiExpress } from "react-icons/si";
+import { SiMongodb } from "react-icons/si";
 function About() {
   return (
     <div>
@@ -12,7 +17,6 @@ function About() {
           <div className="row">
             <div className="col-md-6" data-aos="zoom-in">
               <div className="about-me-box shadow-box">
-                <a className="overlay-link" href="./about/index.html"></a>
                 <img src={bg1} alt="BG" className="bg-img" />
                 <div className="img-box">
                   <img
@@ -57,7 +61,6 @@ function About() {
                 <div className="gx-row d-flex gap-24">
                   <div data-aos="zoom-in">
                     <div className="about-project-box info-box shadow-box h-full">
-                      <a className="overlay-link" href="./works/index.html"></a>
                       <img src={bg1} alt="BG" className="bg-img" />
                       <img src={myWorks} alt="My Works" />
                       <div className="d-flex align-items-center justify-content-between">
@@ -99,29 +102,21 @@ function About() {
 
                 <div data-aos="zoom-in" className="flex-1">
                   <div className="about-services-box info-box shadow-box h-full">
-                    <a
-                      href="./service/service.html"
-                      className="overlay-link"
-                    ></a>
-                    <img
-                      src="./assets/images/bg1.png"
-                      alt="BG"
-                      className="bg-img"
-                    />
+                    <img src={bg1} alt="BG" className="bg-img" />
                     <div className="icon-boxes">
-                      <i className="iconoir-camera"></i>
-                      <i className="iconoir-design-pencil"></i>
-                      <i className="iconoir-color-filter"></i>
-                      <i className="iconoir-dev-mode-phone"></i>
+                      <FaReact className="skillIcon" />
+                      <TbBrandJavascript className="skillIcon" />
+                      <SiExpress className="skillIcon" />
+                      <SiMongodb className="skillIcon" />
                     </div>
                     <div className="d-flex align-items-center justify-content-between">
                       <div className="infos">
                         <h4>specialization</h4>
-                        <h1>Services Offering</h1>
+                        <h1>My Skills</h1>
                       </div>
 
                       <a href="./service/service.html" className="about-btn">
-                        <img src="./assets/images/icon.svg" alt="Button" />
+                        <img src={btnIcon} alt="Button" />
                       </a>
                     </div>
                   </div>
@@ -129,17 +124,13 @@ function About() {
 
                 <div data-aos="zoom-in">
                   <div className="about-profile-box info-box shadow-box h-full">
-                    <img
-                      src="./assets/images/bg1.png"
-                      alt="BG"
-                      className="bg-img"
-                    />
+                    <img src={bg1} alt="BG" className="bg-img" />
                     <div className="inner-profile-icons shadow-box">
                       <a href="#">
-                        <i className="iconoir-dribbble"></i>
+                        <FaLinkedin className="skillIcon" />
                       </a>
                       <a href="#">
-                        <i className="iconoir-twitter"></i>
+                        <FaGithub className="skillIcon" />
                       </a>
                     </div>
                     <div className="d-flex align-items-center justify-content-between">
@@ -149,7 +140,7 @@ function About() {
                       </div>
 
                       <a href="./contact/index.html" className="about-btn">
-                        <img src="./assets/images/icon.svg" alt="Button" />
+                        <img src={btnIcon} alt="Button" />
                       </a>
                     </div>
                   </div>
@@ -161,17 +152,13 @@ function About() {
           <div className="row mt-24">
             <div className="col-md-6" data-aos="zoom-in">
               <div className="about-client-box info-box shadow-box">
-                <img
-                  src="./assets/images/bg1.png"
-                  alt="BG"
-                  className="bg-img"
-                />
+                <img src={bg1} alt="BG" className="bg-img" />
                 <div className="clients d-flex align-items-start gap-24 justify-content-center">
                   <div className="client-item">
-                    <h1>07</h1>
+                    <h1>02</h1>
                     <p>
                       Years <br />
-                      Experience
+                      Learning Experience
                     </p>
                   </div>
 
@@ -184,7 +171,7 @@ function About() {
                   </div>
 
                   <div className="client-item">
-                    <h1>+210</h1>
+                    <h1>+15</h1>
                     <p>
                       Total <br />
                       Projects
@@ -195,23 +182,14 @@ function About() {
             </div>
             <div className="col-md-6" data-aos="zoom-in">
               <div className="about-contact-box info-box shadow-box">
-                <a className="overlay-link" href="./contact/index.html"></a>
-                <img
-                  src="./assets/images/bg1.png"
-                  alt="BG"
-                  className="bg-img"
-                />
-                <img
-                  src="./assets/images/icon2.png"
-                  alt="Icon"
-                  className="star-icon"
-                />
+                <img src={bg1} alt="BG" className="bg-img" />
+                <img src={icon2} alt="Icon" className="star-icon" />
                 <h1>
                   Let's <br />
                   work <span>together.</span>
                 </h1>
                 <a href="#" className="about-btn">
-                  <img src="./assets/images/icon.svg" alt="Button" />
+                  <img src={btnIcon} alt="Button" />
                 </a>
               </div>
             </div>

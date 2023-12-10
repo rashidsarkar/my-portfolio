@@ -3,6 +3,10 @@
   width: 224px;
   height: 126px;
 }
+.skillIcon {
+  height: 40px;
+  width: 40px;
+}
 /* # About */
 
 .about-area {
