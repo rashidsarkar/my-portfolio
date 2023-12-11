@@ -42,3 +42,6 @@
 .footer-area .footer-content .copyright span {
   color: var(--primary_color);
 }
+.poinerCarsul {
+  cursor: pointer;
+}

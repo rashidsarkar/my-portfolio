@@ -28,7 +28,8 @@ function Footer() {
               </li>
             </ul>
             <p className="copyright">
-              &copy; All rights reserved by <span>Rashid Sarkar</span>
+              &copy; All rights reserved by{" "}
+              <span className="poinerCarsul">Rashid Sarkar</span>
             </p>
           </div>
         </div>

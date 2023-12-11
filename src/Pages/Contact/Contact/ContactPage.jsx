@@ -9,6 +9,7 @@ import {
 } from "react-icons/fa6";
 import bg1 from "../../MySkills/images/bg1.png";
 import icon2 from "../../MySkills/images/icon2.png";
+import { Link } from "react-router-dom";
 function ContactPage() {
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -64,28 +65,28 @@ function ContactPage() {
                 data-aos="zoom-in"
               >
                 <li>
-                  <a
+                  <Link
                     className="shadow-box d-flex  justify-content-center align-items-center"
-                    href=""
+                    to={`https://github.com/rashidsarkar`}
                   >
                     <FaGithub />
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
+                  <Link
                     className="shadow-box d-flex  justify-content-center align-items-center"
-                    href=""
+                    to={`https://www.linkedin.com/in/rashidsarkar/`}
                   >
                     <FaLinkedin />
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
+                  <Link
                     className="shadow-box d-flex  justify-content-center align-items-center"
-                    href=""
+                    to={`https://www.facebook.com/RongilaRashid`}
                   >
                     <FaFacebook />
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>

@@ -1,6 +1,8 @@
 import { Link, NavLink } from "react-router-dom";
 import "./header.css";
 import { useState } from "react";
+import myResume from "./MdRashidSarkarResume-MERN Stack Developer.pdf";
+
 function Header() {
   const [isActive, setIsActive] = useState(false);
 
@@ -81,14 +83,28 @@ function Header() {
                 </li> */}
                 {navLinks}
               </ul>
-              <Link to={`/contactPage`} className="theme-btn">
+              {/* <Link to={`/contactPage`} className="theme-btn">
                 Let's talk
-              </Link>
+              </Link> */}
+              <a
+                href={myResume}
+                download="RashidSarkarResume.pdf"
+                className="theme-btn"
+              >
+                Download Resume
+              </a>
+              {/* <a className="about-btn">
+                <img src={btnIcon} alt="resume-Button" />
+              </a> */}
             </nav>
 
-            <Link to={`/contactPage`} className="theme-btn">
-              Let's talk
-            </Link>
+            <a
+              href={myResume}
+              download="RashidSarkarResume.pdf"
+              className="theme-btn"
+            >
+              Download Resume
+            </a>
 
             {/* <div className="show-menu">
               <span></span>
