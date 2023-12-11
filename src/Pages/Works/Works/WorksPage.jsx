@@ -24,8 +24,11 @@ function WorksPage() {
               <div data-aos="zoom-in">
                 <div className="project-item shadow-box">
                   <img src={bg1} alt="BG" className="bg-img" />
-                  <div className="project-img">
-                    <img src={unsplashProject} alt="Project" />
+                  <div className="project-img projectHight d-flex  justify-content-center  align-items-center ">
+                    <img
+                      src={`https://i.ibb.co/myJTqML/Am-I-Responsive.png`}
+                      alt="Project"
+                    />
                   </div>
                   <div className="d-flex align-items-center justify-content-between">
                     <div className="project-info">
@@ -52,8 +55,11 @@ function WorksPage() {
                 <div data-aos="zoom-in" className="flex-1">
                   <div className="project-item shadow-box">
                     <img src={bg1} alt="BG" className="bg-img" />
-                    <div className="project-img">
-                      <img src={project3} alt="Project" />
+                    <div className="project-img projectHight2 d-flex  justify-content-center align-items-center ">
+                      <img
+                        src={`https://i.ibb.co/rfb880y/Am-I-Responsive.png`}
+                        alt="Project"
+                      />
                     </div>
                     <div className="d-flex align-items-center justify-content-between">
                       <div className="project-info">
@@ -73,8 +79,11 @@ function WorksPage() {
                 <div data-aos="zoom-in" className="flex-1">
                   <div className="project-item shadow-box">
                     <img src={bg1} alt="BG" className="bg-img" />
-                    <div className="project-img">
-                      <img src={project1} alt="Project" />
+                    <div className="project-img projectHight2 d-flex  justify-content-center align-items-center">
+                      <img
+                        src={`https://i.ibb.co/Nx72Knv/Am-I-Responsive-1.png`}
+                        alt="Project"
+                      />
                     </div>
                     <div className="d-flex align-items-center justify-content-between">
                       <div className="project-info">
