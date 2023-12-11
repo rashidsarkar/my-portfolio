@@ -1,6 +1,50 @@
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import "./header.css";
 function Header() {
+  const navLinks = (
+    <>
+      <li>
+        <NavLink
+          to="/"
+          className={({ isActive, isPending }) =>
+            isPending ? "pending" : isActive ? "text-white" : ""
+          }
+        >
+          Home
+        </NavLink>
+      </li>
+      <li>
+        <NavLink
+          to="/aboutPage"
+          className={({ isActive, isPending }) =>
+            isPending ? "pending" : isActive ? "text-white" : ""
+          }
+        >
+          About
+        </NavLink>
+      </li>
+      <li>
+        <NavLink
+          to="/worksPage"
+          className={({ isActive, isPending }) =>
+            isPending ? "pending" : isActive ? "text-white" : ""
+          }
+        >
+          Works
+        </NavLink>
+      </li>
+      <li>
+        <NavLink
+          to="/Contact"
+          className={({ isActive, isPending }) =>
+            isPending ? "pending" : isActive ? "text-white" : ""
+          }
+        >
+          Contact
+        </NavLink>
+      </li>
+    </>
+  );
   return (
     <>
       <header className="header-area">
@@ -16,18 +60,19 @@ function Header() {
 
             <nav className="navbar">
               <ul className="menu">
-                <li className="active">
-                  <Link>Home</Link>
+                {/* <li className="active">
+                  <NavLink to={`/`}>Home</NavLink>
                 </li>
                 <li>
-                  <Link to={`/aboutPage`}>About</Link>
+                  <NavLink to={`/aboutPage`}>About</NavLink>
                 </li>
                 <li>
                   <Link>Works</Link>
                 </li>
                 <li>
                   <Link>Contact</Link>
-                </li>
+                </li> */}
+                {navLinks}
               </ul>
               <a href="./contact/index.html" className="theme-btn">
                 Let's talk

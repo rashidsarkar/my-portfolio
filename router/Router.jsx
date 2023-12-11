@@ -3,6 +3,7 @@ import MainLayaout from "../src/MainLayaout/MainLayaout";
 import Home from "../src/Pages/Home/Home";
 import MySkills from "../src/Pages/MySkills/MySkills";
 import AboutPage from "../src/Pages/AboutPage/AboutPage/AboutPage";
+import WorksPage from "../src/Pages/Works/Works/WorksPage";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -19,6 +20,10 @@ const router = createBrowserRouter([
       {
         path: "/aboutPage",
         element: <AboutPage />,
+      },
+      {
+        path: "/worksPage",
+        element: <WorksPage />,
       },
     ],
   },
