@@ -50,13 +50,13 @@ function Header() {
       <header className="header-area">
         <div className="container">
           <div className="gx-row d-flex align-items-center justify-content-between">
-            <a href="./index.html" className="logo">
+            <Link to={`/`} className="logo">
               <img
                 className="mylogo"
                 src="https://i.ibb.co/Qdjzf6t/My-Logo-Logo-AI-com-removebg-preview-1.png"
                 alt="Logo"
               />
-            </a>
+            </Link>
 
             <nav className="navbar">
               <ul className="menu">

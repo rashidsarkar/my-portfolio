@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./footer.css";
 function Footer() {
   return (
@@ -5,25 +6,25 @@ function Footer() {
       <footer className="footer-area">
         <div className="container">
           <div className="footer-content text-center">
-            <a href="./index.html" className="logo">
+            <Link to={`/`} className="logo">
               <img
                 className="mylogo"
                 src="https://i.ibb.co/Qdjzf6t/My-Logo-Logo-AI-com-removebg-preview-1.png"
                 alt="Logo"
               />
-            </a>
+            </Link>
             <ul className="footer-menu">
               <li>
-                <a href="index.html">Home</a>
+                <Link to={`/`}>Home</Link>
               </li>
               <li>
-                <a href="./about/index.html">About</a>
+                <Link to={`/aboutPage`}>About</Link>
               </li>
               <li>
-                <a href="./works/index.html">Works</a>
+                <Link to={`/worksPage`}>Works</Link>
               </li>
               <li>
-                <a href="./contact/index.html">Contact</a>
+                <Link to={`/contactPage`}>Contact</Link>
               </li>
             </ul>
             <p className="copyright">
