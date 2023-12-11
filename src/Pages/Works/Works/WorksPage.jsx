@@ -1,24 +1,29 @@
+import star2 from "../../MySkills/images/star-2.png";
+import bg1 from "../../MySkills/images/bg1.png";
+import btnIcom from "../../MySkills/images/icon.svg";
+import Luxe from "../assets/Luxe-Home(1).png";
+import RongilaWedding from "../assets/Rongila-Wedding-Planner.png";
+import Serfix from "../assets/Serfix.png";
+import project1 from "../assets/project1.jpeg";
+import project2 from "../assets/project2.jpeg";
+import project3 from "../assets/project3.jpeg";
+import "./workPage.css";
 function WorksPage() {
   return (
     <>
       <section className="projects-area">
         <div className="container">
           <h1 className="section-heading" data-aos="fade-up">
-            <img src="./assets/images/star-2.png" alt="Star" /> All Projects
-            <img src="./assets/images/star-2.png" alt="Star" />
+            <img src={star2} alt="Star" /> All Projects
+            <img src={star2} alt="Star" />
           </h1>
           <div className="row">
             <div className="col-md-4">
               <div data-aos="zoom-in">
                 <div className="project-item shadow-box">
-                  <a className="overlay-link" href="../works/index.html"></a>
-                  <img
-                    src="./assets/images/bg1.png"
-                    alt="BG"
-                    className="bg-img"
-                  />
+                  <img src={bg1} alt="BG" className="bg-img" />
                   <div className="project-img">
-                    <img src="./assets/images/project1.jpeg" alt="Project" />
+                    <img src={project1} alt="Project" />
                   </div>
                   <div className="d-flex align-items-center justify-content-between">
                     <div className="project-info">
@@ -26,30 +31,7 @@ function WorksPage() {
                       <h1>Dynamic</h1>
                     </div>
                     <a href="../works/index.html" className="project-btn">
-                      <img src="./assets/images/icon.svg" alt="Button" />
-                    </a>
-                  </div>
-                </div>
-              </div>
-
-              <div data-aos="zoom-in">
-                <div className="project-item shadow-box">
-                  <a className="overlay-link" href="../works/index.html"></a>
-                  <img
-                    src="./assets/images/bg1.png"
-                    alt="BG"
-                    className="bg-img"
-                  />
-                  <div className="project-img">
-                    <img src="./assets/images/project2.jpeg" alt="Project" />
-                  </div>
-                  <div className="d-flex align-items-center justify-content-between">
-                    <div className="project-info">
-                      <p>PHOTOGRAPHY</p>
-                      <h1>Diesel H1</h1>
-                    </div>
-                    <a href="../works/index.html" className="project-btn">
-                      <img src="./assets/images/icon.svg" alt="Button" />
+                      <img src={btnIcom} alt="Button" />
                     </a>
                   </div>
                 </div>
@@ -57,8 +39,8 @@ function WorksPage() {
             </div>
             <div className="col-md-8">
               <h1 className="section-heading" data-aos="fade-up">
-                <img src="./assets/images/star-2.png" alt="Star" /> All Projects
-                <img src="./assets/images/star-2.png" alt="Star" />
+                <img src={star2} alt="Star" /> All Projects
+                <img src={star2} alt="Star" />
               </h1>
 
               <div className="d-flex align-items-start gap-24">
@@ -102,54 +84,6 @@ function WorksPage() {
                         <h1>Raven Studio</h1>
                       </div>
                       <a href="../works/index.html" className="project-btn">
-                        <img src="./assets/images/icon.svg" alt="Button" />
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div className="d-flex align-items-start gap-24">
-                <div data-aos="zoom-in" className="flex-1">
-                  <div className="project-item shadow-box">
-                    <a className="overlay-link" href="../works/index.html"></a>
-                    <img
-                      src="./assets/images/bg1.png"
-                      alt="BG"
-                      className="bg-img"
-                    />
-                    <div className="project-img">
-                      <img src="./assets/images/project5.jpeg" alt="Project" />
-                    </div>
-                    <div className="d-flex align-items-center justify-content-between">
-                      <div className="project-info">
-                        <p>mOBILE DESIGNING</p>
-                        <h1>Submarine</h1>
-                      </div>
-                      <a href="../works/index.html" className="project-btn">
-                        <img src="./assets/images/icon.svg" alt="Button" />
-                      </a>
-                    </div>
-                  </div>
-                </div>
-
-                <div data-aos="zoom-in" className="flex-1">
-                  <div className="project-item shadow-box">
-                    <a className="overlay-link" href="#"></a>
-                    <img
-                      src="./assets/images/bg1.png"
-                      alt="BG"
-                      className="bg-img"
-                    />
-                    <div className="project-img">
-                      <img src="./assets/images/project6.jpeg" alt="Project" />
-                    </div>
-                    <div className="d-flex align-items-center justify-content-between">
-                      <div className="project-info">
-                        <p>wEB DESIGNING</p>
-                        <h1>Hydra Merc</h1>
-                      </div>
-                      <a href="#" className="project-btn">
                         <img src="./assets/images/icon.svg" alt="Button" />
                       </a>
                     </div>
