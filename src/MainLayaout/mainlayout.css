@@ -17,6 +17,7 @@ body {
   color: #9f9f9f;
   background: #0f0f0f;
   line-height: 19.2px;
+  overflow-x: hidden;
 }
 img {
   max-width: 100%;
