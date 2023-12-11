@@ -50,7 +50,7 @@ function About() {
                       <div>
                         <span className="merqueText ">
                           Hey there! I'm Rashid Sarkar, a passionate web
-                          developer based in Bangladesh.
+                          developer.
                           <img src={star1} alt="Star" />
                           With a solid year of experience in the field, I
                           specialize in crafting delightful user experiences

@@ -35,7 +35,7 @@ function Header() {
       </li>
       <li>
         <NavLink
-          to="/Contact"
+          to="/contactPage"
           className={({ isActive, isPending }) =>
             isPending ? "pending" : isActive ? "text-white" : ""
           }
