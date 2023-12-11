@@ -8,6 +8,9 @@ import project1 from "../assets/project1.jpeg";
 import project2 from "../assets/project2.jpeg";
 import project3 from "../assets/project3.jpeg";
 import unsplashProject from "../assets/ben-kolde-bs2Ba7t69mM-unsplash.jpg";
+import resi1 from "../assets/resi1.jpg";
+import resi2 from "../assets/res2.png";
+import resi3 from "../assets/res3.png";
 import "./workPage.css";
 import { Link } from "react-router-dom";
 function WorksPage() {
@@ -25,10 +28,11 @@ function WorksPage() {
                 <div className="project-item shadow-box">
                   <img src={bg1} alt="BG" className="bg-img" />
                   <div className="project-img projectHight d-flex  justify-content-center  align-items-center ">
-                    <img
+                    {/* <img
                       src={`https://i.ibb.co/myJTqML/Am-I-Responsive.png`}
                       alt="Project"
-                    />
+                    /> */}
+                    <img src={resi1} alt="Project" />
                   </div>
                   <div className="d-flex align-items-center justify-content-between">
                     <div className="project-info">
@@ -56,10 +60,11 @@ function WorksPage() {
                   <div className="project-item shadow-box">
                     <img src={bg1} alt="BG" className="bg-img" />
                     <div className="project-img projectHight2 d-flex  justify-content-center align-items-center ">
-                      <img
+                      {/* <img
                         src={`https://i.ibb.co/rfb880y/Am-I-Responsive.png`}
                         alt="Project"
-                      />
+                      /> */}
+                      <img src={resi2} alt="Project" />
                     </div>
                     <div className="d-flex align-items-center justify-content-between">
                       <div className="project-info">
@@ -80,10 +85,11 @@ function WorksPage() {
                   <div className="project-item shadow-box">
                     <img src={bg1} alt="BG" className="bg-img" />
                     <div className="project-img projectHight2 d-flex  justify-content-center align-items-center">
-                      <img
+                      {/* <img
                         src={`https://i.ibb.co/Nx72Knv/Am-I-Responsive-1.png`}
                         alt="Project"
-                      />
+                      /> */}
+                      <img src={resi3} alt="" />
                     </div>
                     <div className="d-flex align-items-center justify-content-between">
                       <div className="project-info">

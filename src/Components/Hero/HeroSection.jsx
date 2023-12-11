@@ -14,7 +14,8 @@ const HeroSection = () => {
       <div className="container">
         <div className="row justify-content-md-center">
           <div className="col-12 col-md-11 col-lg-9 col-xl-7 col-xxl-6 text-center text-white">
-            <h1 data-aos="fade-right" className="display-5 fw-bold mb-3">
+            <h1 data-aos="zoom-in-up" className="display-5 fw-bold mb-3">
+              {/* data-aos="fade-right" */}
               Elevate Your Web Presence
             </h1>
             {/* <TypeAnimation
@@ -33,7 +34,8 @@ const HeroSection = () => {
               repeat={Infinity}
             /> */}
 
-            <p data-aos="fade-left" className="lead mb-5 text-white ">
+            <p data-aos="zoom-in-down" className="lead mb-5 text-white ">
+              {/* data-aos="fade-left" */}
               Transform your online presence and stand out from the rest with
               our cutting-edge solutions.
             </p>
