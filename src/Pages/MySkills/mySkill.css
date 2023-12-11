@@ -182,3 +182,71 @@ ol {
 .skillWork {
   width: 100% !important;
 }
+@media (max-width: 1090px) {
+  .container {
+    padding: 0 20px;
+  }
+  .about-area .about-me-box {
+    padding: 40px 30px;
+  }
+  .about-area .about-me-box .img-box {
+    width: 190px;
+    height: 190px;
+  }
+  .about-area .about-me-box .infos {
+    padding-top: 10px;
+  }
+  .about-area .about-me-box .infos h1 {
+    font-size: 30px;
+    line-height: 1.2;
+  }
+  .about-area .about-me-box .infos .about-btn {
+    bottom: 25px;
+  }
+  .info-box {
+    padding: 20px;
+  }
+  .info-box > img {
+    width: 75%;
+  }
+  .info-box.about-services-box .icon-boxes {
+    margin-bottom: 39px;
+    margin-top: 31px;
+  }
+  .info-box .inner-profile-icons {
+    padding: 16px;
+  }
+  .info-box .inner-profile-icons a {
+    width: 62px;
+    height: 62px;
+  }
+  .info-box .inner-profile-icons a i {
+    font-size: 25px;
+  }
+  .info-box.about-contact-box .star-icon {
+    width: auto;
+  }
+  .info-box.about-contact-box {
+    padding-top: 74px;
+  }
+
+  .section-heading {
+    font-size: 54px;
+  }
+  .section-heading img {
+    width: 25px;
+  }
+
+  .service-area .service-sidebar .service-sidebar-inner {
+    padding: 50px 24px;
+    height: auto;
+  }
+  .service-area .service-sidebar .service-sidebar-inner ul {
+    justify-content: center;
+    gap: 114px;
+  }
+  .service-area .service-content-wrap .service-content-inner .service-item {
+    width: 100%;
+    padding-bottom: 30px;
+  }
+}

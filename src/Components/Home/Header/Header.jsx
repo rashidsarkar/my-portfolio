@@ -1,6 +1,13 @@
 import { Link, NavLink } from "react-router-dom";
 import "./header.css";
+import { useState } from "react";
 function Header() {
+  const [isActive, setIsActive] = useState(false);
+
+  const toggleMenu = () => {
+    setIsActive(!isActive);
+  };
+
   const navLinks = (
     <>
       <li>
@@ -58,7 +65,7 @@ function Header() {
               />
             </Link>
 
-            <nav className="navbar">
+            <nav className={`navbar ${isActive ? "active" : ""}`}>
               <ul className="menu">
                 {/* <li className="active">
                   <NavLink to={`/`}>Home</NavLink>
@@ -83,7 +90,16 @@ function Header() {
               Let's talk
             </Link>
 
-            <div className="show-menu">
+            {/* <div className="show-menu">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div> */}
+
+            <div
+              className={`show-menu ${isActive ? "active" : ""}`}
+              onClick={toggleMenu}
+            >
               <span></span>
               <span></span>
               <span></span>
