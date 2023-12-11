@@ -74,14 +74,14 @@ function Header() {
                 </li> */}
                 {navLinks}
               </ul>
-              <a href="./contact/index.html" className="theme-btn">
+              <Link to={`/contactPage`} className="theme-btn">
                 Let's talk
-              </a>
+              </Link>
             </nav>
 
-            <a href="./contact/index.html" className="theme-btn">
+            <Link to={`/contactPage`} className="theme-btn">
               Let's talk
-            </a>
+            </Link>
 
             <div className="show-menu">
               <span></span>

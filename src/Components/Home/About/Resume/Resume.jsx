@@ -1,6 +1,8 @@
 import bg1 from "../../../../assets/about/bg1.png";
 import resumeIcon from "../../../../assets/about/resumeIcon2.png";
 import btnIcon from "../../../../assets/about/btnIcon.svg";
+import myResume from "./MdRashidSarkarResume-MERN Stack Developer.pdf";
+import { Link } from "react-router-dom";
 function Resume() {
   return (
     <>
@@ -14,8 +16,8 @@ function Resume() {
               <h1>Download Now</h1>
             </div>
 
-            <a href="./blog/blog.html" className="about-btn">
-              <img src={btnIcon} alt="Button" />
+            <a className="about-btn" href={myResume} download="MyResume.pdf">
+              <img src={btnIcon} alt="resume-Button" />
             </a>
           </div>
         </div>
