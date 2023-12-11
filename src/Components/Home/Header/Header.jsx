@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./header.css";
 function Header() {
   return (
@@ -16,16 +17,16 @@ function Header() {
             <nav className="navbar">
               <ul className="menu">
                 <li className="active">
-                  <a href="index.html">Home</a>
+                  <Link>Home</Link>
                 </li>
                 <li>
-                  <a href="./about/index.html">About</a>
+                  <Link to={`/aboutPage`}>About</Link>
                 </li>
                 <li>
-                  <a href="./works/index.html">Works</a>
+                  <Link>Works</Link>
                 </li>
                 <li>
-                  <a href="./contact/index.html">Contact</a>
+                  <Link>Contact</Link>
                 </li>
               </ul>
               <a href="./contact/index.html" className="theme-btn">
