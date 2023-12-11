@@ -7,16 +7,75 @@ import {
   FaLocationDot,
   FaPhone,
 } from "react-icons/fa6";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import bg1 from "../../MySkills/images/bg1.png";
 import icon2 from "../../MySkills/images/icon2.png";
 import { Link } from "react-router-dom";
+import emailjs from "emailjs-com";
+const serviceID = "service_d0s91zk";
+const templateID = "template_sky0u9h";
+const publicKey = "HeqpLKIzL6j-ywhuC";
 function ContactPage() {
   const handleSubmit = (event) => {
     event.preventDefault();
+    const formData = new FormData(event.target);
+    const fullName = formData.get("full-name");
+    const email = formData.get("email");
+    const subject = formData.get("subject");
+    const message = formData.get("message");
+    // console.log(fullName, email, subject, message);
+    const params = {
+      from_name: fullName,
+      from_email: email,
+      subject,
+      message,
+    };
+    // Send the email using EmailJS
+
+    // emailjs.sendForm(serviceID, templateID, params).then(
+    //   (result) => {
+    //     console.log(result.text);
+    //   },
+    //   (error) => {
+    //     console.log(error.text);
+    //   }
+    // );
+    emailjs
+      .send(serviceID, templateID, params, publicKey)
+      .then((response) => {
+        console.log("Email sent successfully!", response);
+        toast("Your information sent successfully", {
+          position: "top-right",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "dark",
+        });
+        event.target.reset();
+      })
+      .catch((error) => {
+        console.error("Error sending email:", error);
+      });
   };
   return (
     <>
       <section className="contact-area">
+        <ToastContainer
+          position="top-right"
+          autoClose={5000}
+          hideProgressBar={false}
+          newestOnTop={false}
+          closeOnClick
+          rtl={false}
+          pauseOnFocusLoss
+          draggable
+          pauseOnHover
+          theme="dark"
+        />
         <div className="container">
           <div className="gx-row d-flex justify-content-between gap-24">
             <div className="contact-infos">
