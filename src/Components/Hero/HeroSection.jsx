@@ -12,12 +12,12 @@ const HeroSection = () => {
       <div className="container">
         <div className="row justify-content-md-center">
           <div className="col-12 col-md-11 col-lg-9 col-xl-7 col-xxl-6 text-center text-white">
-            <h1 className="display-3 fw-bold mb-3">Art of Design</h1>
+            <h1 className="display-5 fw-bold mb-3">
+              Elevate Your Web Presence
+            </h1>
             <p className="lead mb-5">
-              Powerful, extensible, and feature-packed frontend toolkit. Build
-              and customize with Sass, utilize prebuilt grid system and
-              components, and bring projects to life with powerful JavaScript
-              plugins.
+              Transform your online presence and stand out from the rest with
+              our cutting-edge solutions.
             </p>
           </div>
         </div>
