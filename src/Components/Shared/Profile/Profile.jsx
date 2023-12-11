@@ -1,6 +1,7 @@
 import { FaGithub, FaLinkedin } from "react-icons/fa6";
 import bg1 from "../../../assets/about/bg1.png";
 import btnIcon from "../../../assets/about/btnIcon.svg";
+import { Link } from "react-router-dom";
 
 function Profile() {
   return (
@@ -9,12 +10,13 @@ function Profile() {
         <div className="about-profile-box info-box shadow-box h-full">
           <img src={bg1} alt="BG" className="bg-img" />
           <div className="inner-profile-icons shadow-box">
-            <a href="#">
+            <Link to={`https://www.linkedin.com/in/rashidsarkar/`}>
               <FaLinkedin className="skillIcon" />
-            </a>
-            <a href="#">
+            </Link>
+
+            <Link to={`https://github.com/rashidsarkar`}>
               <FaGithub className="skillIcon" />
-            </a>
+            </Link>
           </div>
           <div className="d-flex align-items-center justify-content-between">
             <div className="infos">
@@ -22,9 +24,9 @@ function Profile() {
               <h1>Profiles</h1>
             </div>
 
-            <a href="./contact/index.html" className="about-btn">
+            <Link to={`/aboutPage`} className="about-btn">
               <img src={btnIcon} alt="Button" />
-            </a>
+            </Link>
           </div>
         </div>
       </div>

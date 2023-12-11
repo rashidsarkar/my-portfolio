@@ -1,6 +1,7 @@
 import bg1 from "../../../assets/about/bg1.png";
 import icon2 from "../../../assets/about/icon2.png";
 import btnIcon from "../../../assets/about/btnIcon.svg";
+import { Link } from "react-router-dom";
 function WorkTogeth() {
   return (
     <>
@@ -12,9 +13,9 @@ function WorkTogeth() {
             Let's <br />
             work <span>together.</span>
           </h1>
-          <a href="#" className="about-btn">
+          <Link to={`contactPage`} className="about-btn">
             <img src={btnIcon} alt="Button" />
-          </a>
+          </Link>
         </div>
       </div>
     </>

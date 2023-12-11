@@ -9,6 +9,7 @@ import project2 from "../assets/project2.jpeg";
 import project3 from "../assets/project3.jpeg";
 import unsplashProject from "../assets/ben-kolde-bs2Ba7t69mM-unsplash.jpg";
 import "./workPage.css";
+import { Link } from "react-router-dom";
 function WorksPage() {
   return (
     <>
@@ -31,9 +32,12 @@ function WorksPage() {
                       <p>MERN Project</p>
                       <h1>Luxe Living Platform</h1>
                     </div>
-                    <a href="../works/index.html" className="project-btn">
+                    <Link
+                      to={`https://stellar-malasada-952ea2.netlify.app/`}
+                      className="project-btn"
+                    >
                       <img src={btnIcom} alt="Button" />
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -56,9 +60,12 @@ function WorksPage() {
                         <p>JSON Web Token authentication</p>
                         <h1>Assignment Management</h1>
                       </div>
-                      <a href="../works/index.html" className="project-btn">
+                      <Link
+                        to={`https://fanciful-dango-1d1745.netlify.app/`}
+                        className="project-btn"
+                      >
                         <img src={btnIcom} alt="Button" />
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -74,9 +81,12 @@ function WorksPage() {
                         <p>Responsive Web Desine</p>
                         <h1>Rongila Wedding Planner</h1>
                       </div>
-                      <a href="../works/index.html" className="project-btn">
+                      <Link
+                        to={`https://glittering-tartufo-8f4f75.netlify.app/`}
+                        className="project-btn"
+                      >
                         <img src={btnIcom} alt="Button" />
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </div>

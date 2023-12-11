@@ -35,9 +35,10 @@ function About() {
                   </h4>
                   <h1>Rashid Sarkar.</h1>
                   <p>I am a Web Developer based in Bangladesh.</p>
-                  <a href="#" className="about-btn">
+
+                  <Link to={`/aboutPage`} className="about-btn">
                     <img src={btnIcon} alt="Button" />
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -76,9 +77,9 @@ function About() {
                           <h1>Projects</h1>
                         </div>
 
-                        <a href="#" className="about-btn">
+                        <Link to={`/worksPage`} className="about-btn">
                           <img src={btnIcon} alt="Button" />
-                        </a>
+                        </Link>
                       </div>
                     </div>
                   </div>
@@ -123,11 +124,7 @@ function About() {
                         <h1>My Skills</h1>
                       </div>
 
-                      <Link
-                        to={`/skills`}
-                        href="./service/service.html"
-                        className="about-btn"
-                      >
+                      <Link to={`/skills`} className="about-btn">
                         <img src={btnIcon} alt="Button" />
                       </Link>
                     </div>

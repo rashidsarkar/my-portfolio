@@ -10,6 +10,9 @@ import {
 import bg1 from "../../MySkills/images/bg1.png";
 import icon2 from "../../MySkills/images/icon2.png";
 function ContactPage() {
+  const handleSubmit = (event) => {
+    event.preventDefault();
+  };
   return (
     <>
       <section className="contact-area">
@@ -94,7 +97,7 @@ function ContactPage() {
                 <h1>
                   Let’s work <span>together.</span>
                 </h1>
-                <form method="POST" action="mailer.php">
+                <form onSubmit={handleSubmit}>
                   <div
                     className="alert alert-success messenger-box-contact__msg"
                     style={{ display: "none" }}
