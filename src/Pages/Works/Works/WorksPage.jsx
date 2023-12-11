@@ -11,6 +11,8 @@ import unsplashProject from "../assets/ben-kolde-bs2Ba7t69mM-unsplash.jpg";
 import resi1 from "../assets/resi1.jpg";
 import resi2 from "../assets/res2.png";
 import resi3 from "../assets/res3.png";
+import carres from "../assets/car-res.png";
+import luxeRes1 from "../assets/luxe-res1.png";
 import "./workPage.css";
 import { Link } from "react-router-dom";
 function WorksPage() {
@@ -32,12 +34,30 @@ function WorksPage() {
                       src={`https://i.ibb.co/myJTqML/Am-I-Responsive.png`}
                       alt="Project"
                     /> */}
-                    <img src={resi1} alt="Project" />
+                    <img src={luxeRes1} alt="Project" />
                   </div>
                   <div className="d-flex align-items-center justify-content-between">
                     <div className="project-info">
-                      <p>MERN Project</p>
-                      <h1>Luxe Living Platform</h1>
+                      <p>Luxe Living Platform</p>
+                      {/* <h1>Luxe Living Platform</h1> */}
+                      <div className="d-flex gap-2 ">
+                        <Link
+                          to={`https://github.com/rashidsarkar/Luxe---Modern-Living-Platform---a12-p2`}
+                          type="button"
+                          className="btn btn-success"
+                          data-mdb-ripple-init
+                        >
+                          Clinet Code
+                        </Link>
+                        <Link
+                          to={`https://github.com/rashidsarkar/Luxe-Modern-Living-Platform-server-a12-p2`}
+                          type="button"
+                          className="btn btn-info"
+                          data-mdb-ripple-init
+                        >
+                          Server Code
+                        </Link>
+                      </div>
                     </div>
                     <Link
                       to={`https://stellar-malasada-952ea2.netlify.app/`}
@@ -68,8 +88,26 @@ function WorksPage() {
                     </div>
                     <div className="d-flex align-items-center justify-content-between">
                       <div className="project-info">
-                        <p>JSON Web Token authentication</p>
-                        <h1>Assignment Management</h1>
+                        <p>Assignment Management</p>
+                        {/* <h1>Assignment Management</h1> */}
+                        <div className="d-flex gap-2 ">
+                          <Link
+                            to={`https://github.com/rashidsarkar/Educoda---Assignment-Management-System---a11-p2`}
+                            type="button"
+                            className="btn btn-success"
+                            data-mdb-ripple-init
+                          >
+                            Clinet Code
+                          </Link>
+                          <Link
+                            to={`https://github.com/rashidsarkar/Educoda---Assignment-Management-System--server--a11-p2`}
+                            type="button"
+                            className="btn btn-info"
+                            data-mdb-ripple-init
+                          >
+                            Server Code
+                          </Link>
+                        </div>
                       </div>
                       <Link
                         to={`https://fanciful-dango-1d1745.netlify.app/`}
@@ -89,15 +127,33 @@ function WorksPage() {
                         src={`https://i.ibb.co/Nx72Knv/Am-I-Responsive-1.png`}
                         alt="Project"
                       /> */}
-                      <img src={resi3} alt="" />
+                      <img src={carres} alt="" />
                     </div>
                     <div className="d-flex align-items-center justify-content-between">
                       <div className="project-info">
-                        <p>Responsive Web Desine</p>
-                        <h1>Rongila Wedding Planner</h1>
+                        <p>Automotive Marketplace</p>
+                        {/* <h1>Rongila Wedding Planner</h1> */}
+                        <div className="d-flex gap-2 ">
+                          <Link
+                            to={`https://github.com/rashidsarkar/Serfix-Marketplace---a10-p2`}
+                            type="button"
+                            className="btn btn-success"
+                            data-mdb-ripple-init
+                          >
+                            Clinet Code
+                          </Link>
+                          <Link
+                            to={`https://github.com/rashidsarkar/Serfix-Automotive-Server---a10-p2`}
+                            type="button"
+                            className="btn btn-info"
+                            data-mdb-ripple-init
+                          >
+                            Server Code
+                          </Link>
+                        </div>
                       </div>
                       <Link
-                        to={`https://glittering-tartufo-8f4f75.netlify.app/`}
+                        to={`https://sunny-klepon-b6a36d.netlify.app`}
                         className="project-btn"
                       >
                         <img src={btnIcom} alt="Button" />
